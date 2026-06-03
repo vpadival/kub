@@ -1,0 +1,10 @@
+kubectl create deployment nginx-app --image=nginx
+kubectl get pods
+kubectl expose deployment nginx-app --type=NodePort --port=80
+kubectl get services nginx-app
+
+kubectl port-forward deployment/nginx-app 8080:80
+localhost:8080
+
+kubectl delete deployment nginx-app
+kubectl delete service nginx-app
