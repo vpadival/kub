@@ -1,2 +1,7 @@
-flask==3.0.0
-gunicorn==21.2.0
+kubectl cluster-info
+kubectl get nodes
+kubectl create deployment ngnix --image=ngnix
+kubectl get pods
+kubectl scale deployment ngnix --replicas=3
+kubectl delete pod <pod-name-from-list>
+kubectl delete deployment ngnix
