@@ -1,3 +1,4 @@
+#5
 kubectl create deployment nginx-app --image=nginx
 kubectl get pods
 kubectl expose deployment nginx-app --type=NodePort --port=80
